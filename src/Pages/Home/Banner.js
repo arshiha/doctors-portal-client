@@ -1,5 +1,6 @@
 import React from "react";
 import chair from "../../assets/images/chair.png";
+import PrimaryButton from "../Shared/PrimaryButton.js";
 
 const Banner = () => {
   const myStyle = {
@@ -19,9 +20,7 @@ const Banner = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the
             </p>
-            <button class="btn btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to-primary">
-              Get Started
-            </button>
+            <PrimaryButton>GET STARTED</PrimaryButton>
           </div>
         </div>
       </div>
