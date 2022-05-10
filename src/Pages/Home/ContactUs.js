@@ -11,8 +11,11 @@ const ContactUs = () => {
       className=" m-0 min-h-[100vh]"
     >
       <div className="flex justify-center items-center flex-col">
-        <h1 className="text-center text-[#19D3AE] text-3xl font-bold mt-24 mb-7">
+        <h1 className="text-center text-[#19D3AE] text-1xl font-bold mt-24 mb-7">
           Contact Us
+          <h1 className="text-center text-[#fafafa] text-2xl">
+            Stay connented with us
+          </h1>
         </h1>
         <div className="bg-[#9acaeb] w-2/5 p-2 rounded-lg shadow-md">
           <form className="mx-auto">
@@ -38,9 +41,11 @@ const ContactUs = () => {
                 placeholder="Your message"
               />
             </div>
-            <PrimaryButton>Submit</PrimaryButton>
           </form>
         </div>
+      </div>
+      <div className="text-center my-5">
+        <PrimaryButton>Submit</PrimaryButton>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Info = () => {
       <InfoCard
         cardTitle="Our Locations"
         description="Brooklyn, NY 10036, United States"
-        bgClass="bg-neutral"
+        bgClass="!bg-neutral"
         img={marker}
       ></InfoCard>
       <InfoCard

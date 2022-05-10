@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./Banner.js";
 import ContactUs from "./ContactUs.js";
 import Dental from "./Dental.js";
+import Footer from "./Footer.js";
 import Info from "./Info.js";
 import MakeAppoinment from "./MakeAppoinment.js";
 import Services from "./Services.js";
@@ -17,6 +18,7 @@ const Home = () => {
       <MakeAppoinment></MakeAppoinment>
       <Testimonials></Testimonials>
       <ContactUs></ContactUs>
+      <Footer></Footer>
     </div>
   );
 };
