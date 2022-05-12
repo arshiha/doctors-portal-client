@@ -5,6 +5,8 @@ import Home from "./Pages/Home/Home.js";
 import About from "./Pages/About/About.js";
 import Login from "./Pages/Login/Login.js";
 import Appoinment from "./Pages/Appoinment/Appoinment.js";
+import SignUp from "./Pages/Login/SignUp.js";
+import RequireAuth from "./Pages/Login/RequireAuth.js";
 
 function App() {
   return (
@@ -13,8 +15,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="appoinment" element={<Appoinment />} />
+        <Route
+          path="appoinment"
+          element={
+            <RequireAuth>
+              <Appoinment />
+            </RequireAuth>
+          }
+        />
         <Route path="login" element={<Login />} />
+        <Route path="SignUp" element={<SignUp />} />
       </Routes>
     </div>
   );
